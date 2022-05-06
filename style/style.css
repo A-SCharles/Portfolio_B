@@ -1,0 +1,145 @@
+/* BOOTSTRAP PORFOLIO */
+
+*{
+    scroll-behavior: smooth;
+} 
+
+body{
+    font-family: Arial;
+    font-size: 1.25em;
+    color: white;
+    line-height: 1;
+    background-color: #1c1c1c;
+}
+
+/* NAVIGATION */
+.navbar-toggler{
+    background-color: #1c1c1c;
+}
+
+.navbar {
+    background-color: #FA8072;
+}
+
+.navbar a:hover {
+color: #FFFFFF;
+background: #6265FF;
+}
+.dropdown-menu {
+    background-color: #FA8072; 
+}
+
+.dropdown-item {
+    font-size: 1.25em;
+    padding: 5px;
+}
+/* NAVIGATION END  */
+
+/* WELCOME-SECTION STYLE  */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 90vh; */
+    }
+/* WELCOME-SECTION STYLE END */
+
+/*BORDER ANIMATION */
+
+.border-animation{
+    border-radius: 5px;
+    animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow:0 0 80px #1c1c1c,
+        0 0 20px #1c1c1c, 0 0 30px #1c1c1c,
+        0 0 40px #1c1c1c, 0 0 50px #1c1c1c,
+        0 0 60px #1c1c1c, 0 0 70px #1c1c1c;
+    }
+
+    25%{
+        box-shadow: 0 0 10px #fff, 0 0 20px #1c1c1c,
+        0 0 30px #fa8072, 0 0 40px #fa8072,
+         0 0 50px #fa8072, 0 0 60px #fa8072,
+          0 0 70px #fa8072;
+    }
+
+    50%{
+        box-shadow:0 0 80px #1c1c1c,
+        0 0 20px #1c1c1c, 0 0 30px #1c1c1c,
+        0 0 40px #1c1c1c, 0 0 50px #1c1c1c,
+        0 0 60px #1c1c1c, 0 0 70px #1c1c1c;
+    }
+
+    75%{
+        box-shadow: 0 0 20px #fff, 0 0 30px #0077b5,
+       0 0 40px #0077b5, 0 0 50px #0077b5, 0 0 60px #0077b5,
+        0 0 70px #0077b5, 0 0 80px #0077b5;
+    }
+  }
+/* BORDER ANIMATION END  */
+
+/* ABOUT SECTION  */
+#about-section {
+    /* min-height: 90vh;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;*/
+        line-height: 1.25;
+        scroll-margin-block-start:200px ; 
+}
+
+/* ABOUT SECTION END */
+
+.border-primary {
+    border: 1px solid #0077b5;
+    }
+
+.border-secondary {
+    background-color: #fa8072;
+}
+
+/* SKILLS SECTION  */
+#skills-section {
+    height: 100%;
+    scroll-margin-block-start:200px ; 
+}
+/* SKILLS SECTION END */
+
+/* TESTIMONIALS SECTION */
+#testimonials{
+    background: linear-gradient(
+            rgba(244, 242, 242, 0.1),
+            rgba(248, 248, 248, 0.1)
+          ),
+    url(../image/HD-wallpaper-navy-and-gold-kiss-navy-dark-geometrics-gold-pattern.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    .circle {
+        width: 10px !important;
+        height: 10px !important;
+        aspect-ratio: 1 !important;
+        border-radius: 50% !important;
+    }
+    
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    
+    .projects-container img {
+    max-height: 400px;
+    /* max-width: 300px; */
+    object-fit: cover;
+    flex-grow: 1;
+    }
+/* TESTIMONIALS SECTION END */
